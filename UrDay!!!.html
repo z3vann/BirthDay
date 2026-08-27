@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>UrDay Babee !!! 🌹</title>
+<link rel="icon" type="image/x-icon" href="C:\Users\FATIN SYARIEF P\Desktop\codingina\1.jpeg">
+<link rel="stylesheet" href="UrDay.css">
+</head>
+<body>
+
+<div id="ambientHearts"></div>
+<canvas id="hearts-burst"></canvas>
+
+<!-- Gate: name entry -->
+<div id="gate">
+  <div class="seal">💌</div>
+  <div class="gate-title">Sebelum mulai, isi dengan benar...</div>
+  <div class="gate-sub">Tulis nama kamu dulu yaa dedeeee sayangg.</div>
+  <input id="nameInput" type="text" placeholder="Hai, di sini ya..." maxlength="24">
+  <div id="nameWarning">Heyy! isi dulu ya cantiik 🥺</div>
+  <button id="gateBtn" type="button">Next →</button>
+</div>
+
+<div id="content">
+
+  <div id="hero">
+    <h1 class="eyebrow">Sebuah Kejutan Kecil Untuk</h1>
+    <h1 class="title">Hari Ulang Tahunmu, <em id="titleName">Dedeee Sayangg🥳 </em></h1>
+    <p class="subtitle">tiup lilinnyaa sayangg, lalu gulir ke bawah yaaa.</p>
+
+    <div id="cake-wrap">
+      <div class="cake">
+        <div class="candles" id="candles"></div>
+        <div class="tier top"></div>
+        <div class="tier mid"></div>
+        <div class="tier base"></div>
+      </div>
+      <div class="hint" id="hint">👆 Klik kuenyaa untuk meniup liliinnn</div>
+      <div class="scroll-cue" id="scrollCue">↓ scroll ke bawah yaaa ↓</div>
+    </div>
+  </div>
+
+  <!-- ====================================================== -->
+  <!--  GANTI FOTO DI SINI                                     -->
+  <!--  Taruh 4 file foto di folder yang sama dengan file ini, -->
+  <!--  lalu ganti nilai src="" pada tag <img class="photo-    -->
+  <!--  slot"> di bawah dengan nama file fotomu.                -->
+  <!--  Contoh: src="foto1.jpg"                                 -->
+  <!--  Kalau file foto belum ada / salah nama, otomatis akan   -->
+  <!--  muncul kotak putus-putus sebagai penanda.                -->
+  <!-- ====================================================== -->
+  <div id="gallery">
+      <h2>WARNING! ada foto orang cantikk disini</h2>
+    
+    <div class="polaroid-row">
+      <figure class="polaroid">
+        <img class="photo-slot" src="C:\Users\FATIN SYARIEF P\Desktop\codingina\6.jpeg" alt="Foto 1"
+             onerror="this.onerror=null; this.classList.add('placeholder'); this.removeAttribute('src'); this.textContent='Taruh foto1.jpg di sini';">
+        <figcaption>she's cute, that's literally it.</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img class="photo-slot" src="C:\Users\FATIN SYARIEF P\Desktop\codingina\7.jpeg" alt="Foto 2"
+             onerror="this.onerror=null; this.classList.add('placeholder'); this.removeAttribute('src'); this.textContent='Taruh foto2.jpg di sini';">
+        <figcaption>my person, no debat.</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img class="photo-slot" src="C:\Users\FATIN SYARIEF P\Desktop\codingina\8.jpeg" alt="Foto 3"
+             onerror="this.onerror=null; this.classList.add('placeholder'); this.removeAttribute('src'); this.textContent='Taruh foto3.jpg di sini';">
+        <figcaption>this one's a keeper fr.</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img class="photo-slot" src="C:\Users\FATIN SYARIEF P\Desktop\codingina\9.jpeg" alt="Foto 4"
+             onerror="this.onerror=null; this.classList.add('placeholder'); this.removeAttribute('src'); this.textContent='Taruh foto4.jpg di sini';">
+        <figcaption>she's my fav.</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img class="photo-slot" src="C:\Users\FATIN SYARIEF P\Desktop\codingina\2.jpeg" alt="Foto 5"
+             onerror="this.onerror=null; this.classList.add('placeholder'); this.removeAttribute('src'); this.textContent='Taruh foto4.jpg di sini';">
+        <figcaption>plot twist terindah.</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img class="photo-slot" src="C:\Users\FATIN SYARIEF P\Desktop\codingina\3.jpeg" alt="Foto 6"
+             onerror="this.onerror=null; this.classList.add('placeholder'); this.removeAttribute('src'); this.textContent='Taruh foto4.jpg di sini';">
+        <figcaption>ga kenal tapi somehow jadi gebetan.</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img class="photo-slot" src="C:\Users\FATIN SYARIEF P\Desktop\codingina\5.jpeg" alt="Foto 7"
+             onerror="this.onerror=null; this.classList.add('placeholder'); this.removeAttribute('src'); this.textContent='Taruh foto4.jpg di sini';">
+        <figcaption>worth di-save fr.</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img class="photo-slot" src="C:\Users\FATIN SYARIEF P\Desktop\codingina\1.jpeg" alt="Foto 8"
+             onerror="this.onerror=null; this.classList.add('placeholder'); this.removeAttribute('src'); this.textContent='Taruh foto4.jpg di sini';">
+        <figcaption>jagoan gue.</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img class="photo-slot" src="C:\Users\FATIN SYARIEF P\Desktop\codingina\4.jpeg" alt="Foto 9"
+             onerror="this.onerror=null; this.classList.add('placeholder'); this.removeAttribute('src'); this.textContent='Taruh foto4.jpg di sini';">
+        <figcaption>punya gue.</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img class="photo-slot" src="C:\Users\FATIN SYARIEF P\Desktop\codingina\10.jpeg" alt="Foto 10"
+             onerror="this.onerror=null; this.classList.add('placeholder'); this.removeAttribute('src'); this.textContent='Taruh foto4.jpg di sini';">
+        <figcaption>iykyk, she's the one.</figcaption>
+      </figure>
+    </div>
+  </div>
+  <!-- ====================================================== -->
+  <!--  AKHIR BAGIAN FOTO                                       -->
+  <!-- ====================================================== -->
+
+  <div id="letterSection">
+    <div class="letter-card">
+      <h2 id="letterGreeting">for u, babee</h2>
+      <p>Ur Day Honeyy! cieee makin tua aja nih, ke 14 tahunn yaaa XIXIXI..</p>
+      <p>maaciii cayaanggg udaaa selaluuu bikinnn hidupp abangg berwarnaa yaaaa, semogaaa dedeeee(dedeee apaaa kakaa ni yaaa?🤔) di panjangkannn umurr nyaaa di berikaannn kesehataann di limpahkaann rezekiii nyaaa, aamiin. KAMU DISANA JUGA TOLONGGG DI JAGAAA KESEHATAANN NYAAA, JANGANNN BANDELL" SAMAAA ABANGGG KARENAAA KAMUUUU UDAAA TUAAAAA NIIIII.. sekaranggg kuee nyaa manaaa xixixi, bercandaaa yaaaaa sayaanggg.</p>
+      <p>Selamat ulang tahuunn, dedeeeeeeee. Loveeee Youuuu🌹</p>
+      <div class="signoff">— orang ganteng😎</div>
+    </div>
+  </div>
+
+</div>
+<script src="Day.js"></script>
+</body>
+</html>
